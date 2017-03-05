@@ -39,20 +39,35 @@ class Engine
     	return YAML.load_file(@@nomFic)
 	end
 
-	
+	# Ajoute un équipier à la liste des équipiers
+	# * *Arguments*    :
+	#   - +equipier+  -> l'équipier à ajouter
+	# * *Returns*      :
+	#   - l'objet lui même
 	def addEquipier(equipier)
 		@listeEquipier.push(equipier)
-		return @listeEquipier
+		return self
 	end
 
 	def rmEquipier(equipier)
 		#pouvoir enlever un equipier de la liste
 	end
 
+	# Ajoute un extra à la liste des extras du grill
+	# * *Arguments*    :
+	#   - +extra+  -> l'extra à ajouter
+	# * *Returns*      :
+	#   - l'objet lui même
 	def addExtraGrill(extra)
 		@listeExtraGrill.push(extra)
+		return self
 	end
 
+	# Ajoute un extra à la liste des extras de la caisse
+	# * *Arguments*    :
+	#   - +extra+  -> l'extra à ajouter
+	# * *Returns*      :
+	#   - l'objet lui même
 	def addExtraCaisse(extra)
 		@listeExtraCaisse.push(extra)
 	end
@@ -61,8 +76,8 @@ class Engine
 		return (@listeEquipier)
 	end
 
-	def giveExtra() #créer une array liste tmp qui contienne tout les équipiers pour les enlever petit a petit
-		#rendre le ficheir de save caché
+	# Ajoute un extra à la liste des extras du grill
+	def giveExtra() #rendre le ficheir de save caché
 		equipier = @listeEquipier
 		extraGrill = @listeExtraGrill
 		extraCaisse = @listeExtraCaisse
@@ -85,6 +100,7 @@ class Engine
 		}
 	end
 
+	# Méthode d'affichage de la liste des équipiers
 	def printEquipier()
 		print("\n\n-----------------------La liste des equipier est composé de: ")
 		@listeEquipier.each{ |a|
@@ -109,6 +125,7 @@ class Engine
 		}
 	end
 
+	#Méthode d'affichage des listes d'extras
 	def printExtra()
 		print("\n\n-----------------------La liste des extras grill se compose de: ")
 		@listeExtraGrill.each{ |a|
@@ -120,6 +137,7 @@ class Engine
 		}
 	end
 
+	#Méthode d'affichage de l'engine
 	def printFinal()
 		puts("Voici les équipiers et leurs extras:")
 		i = 0
@@ -132,6 +150,7 @@ class Engine
 		}
   	end
 
+  	
   	def seekEquipier(nom, prenom)
   		#permet de faire une recherche d'un equipier, qui renverra un équipier et qui du coup permettra de le supprimer de la liste
   	end

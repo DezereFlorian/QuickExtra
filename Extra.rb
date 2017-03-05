@@ -28,20 +28,3 @@ class Extra
 		"\nJe suis #{@ennonce} et à faire par #{@type}."
 	end
 end
-
-
-# Serialize une planche.
-	# * *Arguments*    :
-	#   - +nameFic+  -> le nom du fichier pour la sauvegarde
-	# * *Returns*      :
-	#   - le fichier chargé et convertit en langage machine
-	#   
-	#   
-	#   
-# === Gestion de cases dans une planche de Sudoku
-# === Variables d'instance
-# - +rows+	  -> (*PRIVATE*) Hash des lignes<br>
-# - +columns+ -> (*PRIVATE*) Hash des colonnes<br>
-# - +boxes+		-> (*PRIVATE*) Hash des "familles" des boxes<br>
-# - +cells+	  -> (*PRIVATE*) Tableau des valeurs des Cell
-#
