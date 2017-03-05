@@ -49,10 +49,6 @@ class Engine
 		return self
 	end
 
-	def rmEquipier(equipier)
-		#pouvoir enlever un equipier de la liste
-	end
-
 	# Ajoute un extra à la liste des extras du grill
 	# * *Arguments*    :
 	#   - +extra+  -> l'extra à ajouter
@@ -70,10 +66,6 @@ class Engine
 	#   - l'objet lui même
 	def addExtraCaisse(extra)
 		@listeExtraCaisse.push(extra)
-	end
-
-	def getListeEquipier()
-		return (@listeEquipier)
 	end
 
 	# Ajoute un extra à la liste des extras du grill
@@ -105,13 +97,13 @@ class Engine
 		print("\n\n-----------------------La liste des equipier est composé de: ")
 		@listeEquipier.each{ |a|
 			puts(a)
-			if (a.getExtra() != nil)
+			if (a.extra() != nil)
 				puts("mon extra est ")
 				puts(a.getExtra.ennonce)
 			end
 		}
 	end
-
+=begin
 	#####REFAIRE CETTE FONCTION POUR QUE L'AFFICHAGE SE PASSE DE CE TABLEAU, UTILISER EXTRAS DANS EQUIPIER
 	def ConcatInTab()
 		@listeEquipier.each{ |var|
@@ -124,7 +116,7 @@ class Engine
 			end
 		}
 	end
-
+=end
 	#Méthode d'affichage des listes d'extras
 	def printExtra()
 		print("\n\n-----------------------La liste des extras grill se compose de: ")
@@ -137,8 +129,9 @@ class Engine
 		}
 	end
 
-	#Méthode d'affichage de l'engine
+	#Méthode d'affichage de l'engine, affiche les équipiers et leurs extras
 	def printFinal()
+=begin
 		puts("Voici les équipiers et leurs extras:")
 		i = 0
 		loop {
@@ -148,10 +141,9 @@ class Engine
 			i += 3
 		 	break if(i > @tabFinal.length)
 		}
-  	end
-
-  	
-  	def seekEquipier(nom, prenom)
-  		#permet de faire une recherche d'un equipier, qui renverra un équipier et qui du coup permettra de le supprimer de la liste
+=end
+		@listeEquipier.each { |tmp|
+			puts(tmp);
+		}
   	end
 end

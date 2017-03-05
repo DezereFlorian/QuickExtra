@@ -18,13 +18,12 @@ class Extra
 		@type, @ennonce = type, ennonce
 	end
 
-
 	def getEnnonce()
 		return @ennonce
 	end
 
 	# Méthode d'affichage d'un extra
 	def to_s()
-		"\nJe suis #{@ennonce} et à faire par #{@type}."
+		"\nExtra #{@type}: #{@ennonce}"
 	end
 end

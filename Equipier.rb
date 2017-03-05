@@ -8,8 +8,8 @@ class Equipier
 # - +type+ 		-> (*PRIVATE*) La zone de travail de l'équipier
 # - +prenom+	-> (*PRIVATE*) L'extra de l'équipier
 
-	attr_accessor :type, :extra
-	attr_reader :prenom, :nom
+	attr_accessor :extra
+	attr_reader :prenom, :nom, :type
 
 	# Création d'un equipier
 	# * *Arguments*		:
@@ -25,6 +25,7 @@ class Equipier
 		@nom, @prenom, @nbHeure, @type, @extra = nom, prenom, nbHeure, type, nil
 	end
 
+=begin
 	def getType()
 		return @type
 	end
@@ -44,9 +45,10 @@ class Equipier
 	def getnom()
 		return @nom
 	end
+=end
 
 	# Méthode d'affichage d'un équipier
 	def to_s()
-		"\nJe suis #{@nom} #{@prenom}, un equipier #{@type} et je travaille à raison de #{@nbHeure} heures par semaines."
+		"\n#{@nom} #{@prenom}, travaille au poste #{@type} pour #{@nbHeure} heures par semaines, mon extra est #{@extra}"
 	end
 end
