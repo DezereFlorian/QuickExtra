@@ -37,8 +37,6 @@ main.addExtraCaisse(Extra.create("caisse", "Nettoyer les dessous des tables"))
 
 main.giveExtra()
 
-main.ConcatInTab()
-
 main.printFinal()
 
 #main.serialized()

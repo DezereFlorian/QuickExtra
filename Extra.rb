@@ -17,11 +17,11 @@ class Extra
 	def initialize(type, ennonce)
 		@type, @ennonce = type, ennonce
 	end
-
+=begin
 	def getEnnonce()
 		return @ennonce
 	end
-
+=end
 	# Méthode d'affichage d'un extra
 	def to_s()
 		"\nExtra #{@type}: #{@ennonce}"
