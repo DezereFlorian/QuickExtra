@@ -1,0 +1,282 @@
+--- !ruby/object:Engine
+listeEquipier:
+- !ruby/object:Equipier
+  nom: Bourgeois
+  prenom: Maëlle
+  nbHeure: 16
+  type: caisse
+  extra: &5 !ruby/object:Extra
+    type: caisse
+    ennonce: Nettoyer les chaises bébés intégralement
+- !ruby/object:Equipier
+  nom: Charron
+  prenom: Géraldine
+  nbHeure: 24
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Chauveteau
+  prenom: Lauralee
+  nbHeure: 16
+  type: caisse
+  extra: &7 !ruby/object:Extra
+    type: caisse
+    ennonce: Nettoyer les chaises bébés intégralement
+- !ruby/object:Equipier
+  nom: Cruchet
+  prenom: Sandrine
+  nbHeure: 28
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Debonne
+  prenom: Ludivine
+  nbHeure: 24
+  type: caisse
+  extra: &6 !ruby/object:Extra
+    type: caisse
+    ennonce: Nettoyer les dessous des tables
+- !ruby/object:Equipier
+  nom: Dezere
+  prenom: Florian
+  nbHeure: 20
+  type: grill
+  extra: &2 !ruby/object:Extra
+    type: grill
+    ennonce: Nettoyer la carosserie du frigo transition
+- !ruby/object:Equipier
+  nom: Dezere
+  prenom: Jérémy
+  nbHeure: 10
+  type: grill
+  extra: &1 !ruby/object:Extra
+    type: grill
+    ennonce: Nettoyer la hotte (extérieur)
+- !ruby/object:Equipier
+  nom: Dumont
+  prenom: Théophile
+  nbHeure: 16
+  type: grill
+  extra: *1
+- !ruby/object:Equipier
+  nom: Etienne
+  prenom: Léa
+  nbHeure: 24
+  type: caisse
+  extra: &8 !ruby/object:Extra
+    type: caisse
+    ennonce: Nettoyer les dessous des tables
+- !ruby/object:Equipier
+  nom: Gasse
+  prenom: Benjamin
+  nbHeure: 24
+  type: grill
+  extra: 
+- !ruby/object:Equipier
+  nom: Gohier
+  prenom: Stéphanie
+  nbHeure: 20
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Gouesse
+  prenom: Camille
+  nbHeure: 10
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Guillaume
+  prenom: Quentin
+  nbHeure: 28
+  type: grill
+  extra: &4 !ruby/object:Extra
+    type: grill
+    ennonce: Nettoyer la carosserie du frigo transition
+- !ruby/object:Equipier
+  nom: Hocine
+  prenom: Lucas
+  nbHeure: 18
+  type: grill
+  extra: 
+- !ruby/object:Equipier
+  nom: Lasseaux
+  prenom: Anaïs
+  nbHeure: 16
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Leblanc
+  prenom: Marine
+  nbHeure: 16
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Léguillon
+  prenom: Florian
+  nbHeure: 18
+  type: grill
+  extra: *2
+- !ruby/object:Equipier
+  nom: Maheu
+  prenom: Laurianne
+  nbHeure: 28
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Poirier
+  prenom: Virginie
+  nbHeure: 30
+  type: grill
+  extra: &3 !ruby/object:Extra
+    type: grill
+    ennonce: Nettoyer la hotte (extérieur)
+- !ruby/object:Equipier
+  nom: Berthelot
+  prenom: Mélaine
+  nbHeure: 24
+  type: grill
+  extra: 
+- !ruby/object:Equipier
+  nom: Prout
+  prenom: Rot
+  nbHeure: 666
+  type: graisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Bourgeois
+  prenom: Maëlle
+  nbHeure: 16
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Charron
+  prenom: Géraldine
+  nbHeure: 24
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Chauveteau
+  prenom: Lauralee
+  nbHeure: 16
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Cruchet
+  prenom: Sandrine
+  nbHeure: 28
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Debonne
+  prenom: Ludivine
+  nbHeure: 24
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Dezere
+  prenom: Florian
+  nbHeure: 20
+  type: grill
+  extra: 
+- !ruby/object:Equipier
+  nom: Dezere
+  prenom: Jérémy
+  nbHeure: 10
+  type: grill
+  extra: 
+- !ruby/object:Equipier
+  nom: Dumont
+  prenom: Théophile
+  nbHeure: 16
+  type: grill
+  extra: 
+- !ruby/object:Equipier
+  nom: Etienne
+  prenom: Léa
+  nbHeure: 24
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Gasse
+  prenom: Benjamin
+  nbHeure: 24
+  type: grill
+  extra: 
+- !ruby/object:Equipier
+  nom: Gohier
+  prenom: Stéphanie
+  nbHeure: 20
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Gouesse
+  prenom: Camille
+  nbHeure: 10
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Guillaume
+  prenom: Quentin
+  nbHeure: 28
+  type: grill
+  extra: 
+- !ruby/object:Equipier
+  nom: Hocine
+  prenom: Lucas
+  nbHeure: 18
+  type: grill
+  extra: 
+- !ruby/object:Equipier
+  nom: Lasseaux
+  prenom: Anaïs
+  nbHeure: 16
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Leblanc
+  prenom: Marine
+  nbHeure: 16
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Léguillon
+  prenom: Florian
+  nbHeure: 18
+  type: grill
+  extra: 
+- !ruby/object:Equipier
+  nom: Maheu
+  prenom: Laurianne
+  nbHeure: 28
+  type: caisse
+  extra: 
+- !ruby/object:Equipier
+  nom: Poirier
+  prenom: Virginie
+  nbHeure: 30
+  type: grill
+  extra: 
+- !ruby/object:Equipier
+  nom: Berthelot
+  prenom: Mélaine
+  nbHeure: 24
+  type: grill
+  extra: 
+- !ruby/object:Equipier
+  nom: Prout
+  prenom: Caca
+  nbHeure: 56
+  type: graisse
+  extra: 
+listeExtraGrill:
+- *1
+- *2
+- *3
+- *4
+listeExtraCaisse:
+- *5
+- *6
+- *7
+- *8
+tabFinal: []
+nomFic: ".save.yml"

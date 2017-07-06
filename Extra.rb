@@ -24,6 +24,11 @@ class Extra
 =end
 	# Méthode d'affichage d'un extra
 	def to_s()
-		"\nExtra #{@type}: #{@ennonce}"
+		 "#{@ennonce}"
+	end
+
+	# Méthode d'affichage d'un extra pour coller avec un bel affichage
+	def printExtra()
+		return "\nExtra #{@type}: #{@ennonce}"
 	end
 end

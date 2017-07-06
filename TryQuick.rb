@@ -4,13 +4,14 @@ require './Equipier.rb'
 
 main = Engine.new()
 
-#main = Engine.unserialized()
+main = Engine.unserialized()
 
+=begin
 main.addEquipier(Equipier.add("Bourgeois","Maëlle",16, "caisse"))
 main.addEquipier(Equipier.add("Charron","Géraldine",24, "caisse"))
 main.addEquipier(Equipier.add("Chauveteau","Lauralee",16, "caisse"))
 main.addEquipier(Equipier.add("Cruchet","Sandrine",28, "caisse"))
-main.addEquipier(Equipier.add("Debonne","Ludivine",24, "caisse"))
+main.addEquipier(Equipier.add("Debonne","Ludivine",24, "caisse")) 
 main.addEquipier(Equipier.add("Dezere", "Florian", 20, "grill"))
 main.addEquipier(Equipier.add("Dezere","Jérémy",10, "grill"))
 main.addEquipier(Equipier.add("Dumont","Théophile",16, "grill"))
@@ -31,13 +32,17 @@ main.addExtraGrill(Extra.create("grill", "Nettoyer la hotte (extérieur)"))
 main.addExtraGrill(Extra.create("grill", "Nettoyer la carosserie du frigo transition"))
 main.addExtraCaisse(Extra.create("caisse", "Nettoyer les chaises bébés intégralement"))
 main.addExtraCaisse(Extra.create("caisse", "Nettoyer les dessous des tables"))
+=end
+
+#main.addEquipier(Equipier.add("Prout", "Caca", 56, "graisse"))
 
 #main.printEquipier()
 #main.printExtra()
+main.menu()
 
-main.giveExtra()
+#main.giveExtra()
 
-main.printFinal()
+#main.printFinal()
 
-#main.serialized()
+main.serialized()
 

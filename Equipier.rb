@@ -34,6 +34,10 @@ class Equipier
 
 	# Méthode d'affichage d'un équipier
 	def to_s()
-		"\n#{@nom} #{@prenom}, travaille au poste #{@type} pour #{@nbHeure} heures par semaines, mon extra est #{@extra}"
+		if @extra == nil
+			"\n#{@nom} #{@prenom}, travaille au poste #{@type} pour #{@nbHeure} heures par semaines, il n'a pas d'extra pour le moment."
+		else
+			"\n#{@nom} #{@prenom}, travaille au poste #{@type} pour #{@nbHeure} heures par semaines, son extra est #{@extra}."	
+		end
 	end
 end

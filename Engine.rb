@@ -10,7 +10,7 @@ class Engine
 # - +listeEquipier+	    -> (*PRIVATE*) La liste des équipiers
 # - +tabFinal+ 		    -> (*PRIVATE*) Le tableau des équipiers et de leurs extras
 # - +nomFic+            -> (*PRIVATE*) Le nom du fichier de sauvegarde
-
+	@@nomFic = ".save.yaml"
 	# Méthode d'initialisations
 	def initialize()
 		@listeEquipier = Array.new()
@@ -20,22 +20,18 @@ class Engine
 		@nomFic = ".save.yml"
 	end
 
-	# Serialize une planche
-  	# * *Arguments*    :
-  	#   - +nameFic+  -> le nom du fichier pour la sauvegarde
+	# Serialize l'engine
 	def serialized()
     	File.open(@@nomFic, "w+") do |f|
-    	YAML.dump(self, f)
+    		YAML.dump(self, f)
     	end
+    	File.close(@@nomFic)
     end
 
 	# Deserialize une planche
-	# * *Arguments*    :
-	#   - +nameFic+  -> le nom du fichier pour la sauvegarde
 	# * *Returns*      :
 	#   - le fichier chargé et convertit en langage machine
 	def self.unserialized()
-  		File.open(@@nomFic, "r")
     	return YAML.load_file(@@nomFic)
 	end
 
@@ -98,7 +94,7 @@ class Engine
 		@listeEquipier.each{ |a|
 			puts(a)
 			if (a.extra() != nil)
-				puts("mon extra est ")
+				puts("son extra est ")
 				puts(a.getExtra.ennonce)
 			end
 		}
@@ -121,6 +117,57 @@ class Engine
 		@listeEquipier.each { |tmp|
 			puts(tmp)
 		}
+  	end
+
+  	def menu()
+  		#TODO pouvoir chercher un extra/equipier pour le modifier ==== vider la liste des équipiers/extras ====
+  		puts("Que voulez-vous faire?\n1--Ajouter un équipier\n2--Ajouter un extra grill\n3--Ajouter un extra caisse
+  			\n4--Associer les équipiers aux extras\n5--Afficher la liste des extras\n6--Afficher la liste des équipiers
+  			\n9--Quitter")
+  		#choix = gets.chomp.to_i
+  		choix = 1
+  		case choix
+  		when 1
+  			puts("Vous avez choisi d'ajouter un équipier")
+  			puts("Merci d'entrer le nom, le prénom, son nombre d'heure, et le type de l'équipier")
+=begin		
+			nom = gets.chomp
+  			prenom = gets.chomp
+  			heure = gets.chomp.to_i
+  			type = gets.chomp
+=end
+			nom = "Prout"
+			prenom ="caca"
+			heure = "16"
+			type ="graisse"
+  			addEquipier(Equipier.add(nom, prenom, heure, type))
+  			menu
+  		when 2
+  			puts("Vous avez choisi d'ajouter un extra")
+  			puts("Merci d'entrer son intitulé")
+  			#intitule = gets.chomp
+  			intitule = "je suis coucou"
+  			addExtraGrill(Extra.create("grill", intitule))
+  			menu
+  		when 3
+  			puts("Vous avez choisi d'ajouter un extra")
+  			puts("Merci d'entrer son intitulé")
+  			intitule = gets.chomp  			
+  			addExtraCaisse(Extra.create("caisse", intitule))
+  			menu
+  		when 4
+  			giveExtra
+  			menu
+  		when 5
+  			printExtra
+  			menu
+  		when 6
+  			printEquipier
+  			menu
+  		when 9
+  			puts("Vous quittez")
+  			serialized
+  		end  			
   	end
 end
 
